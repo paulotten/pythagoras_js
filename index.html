@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>
+        Pythagoras Calculator
+    </title>
+    <script>
+        const solve = () => {
+            const a = document.getElementById("a").value;
+            const b = document.getElementById("b").value;
+            document.getElementById("c").value = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+        };
+    </script>
+</head>
+<body>
+    Pythagoras Calculator<br>
+    <input id="a" type="number" placeholder="a" onchange="solve();"><br>
+    <input id="b" type="number" placeholder="b" onchange="solve();"><br>
+    <input id="c" type="number" placeholder="c" disabled>
+</body>
+</html>
